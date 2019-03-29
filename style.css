@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Marcellus SC', serif;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin: 2.5%;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+img:hover {
+    border: 4px solid pink;
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#zoomedIn {
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    z-index: 9999;
+}
+
+#zoomedIn:hover {
+    border: 2px solid black;
+    cursor: default;
+}
+
+#container {
+    display: none;
+}
+
+.closebutton {
+    position: fixed;
+    top: 5%;
+    right: 6%;
+    color: white;
+    font-size: 300%;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+#prev {
+    position: fixed;
+    top: 5%;
+    left: 40%;
+    color: white;
+    font-size: 300%;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+#next {
+    position: fixed;
+    top: 5%;
+    right: 40%;
+    color: white;
+    font-size: 300%;
+    z-index: 99999;
+    cursor: pointer;
+}

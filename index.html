@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+</head>
+<body>
+    <div id="intro">
+        <h1>Happy Doggo Gallery</h1>
+    </div>
+    <div id="container">
+        <span id="prev" onclick="prevImg();">&larr;</span>
+        <span id="next" onclick="nextImg();">&rarr;</span>
+        <span class="closebutton" onclick="zoomOut();">&times;</span>
+        <img id="zoomedIn">
+    </div>
+    <div class="row">
+        <div class="column">
+            <img id="1" src="1.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="2" src="2.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="3" src="3.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="4" src="4.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img id="5" src="5.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="6" src="6.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="7" src="7.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+        <div class="column">
+            <img id="8" src="8.jpg" alt="eurasier" onclick="zoomIn(this);">
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
